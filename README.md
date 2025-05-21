@@ -37,7 +37,7 @@ Both parametric and non-parametric tests are included to ensure reliable results
 ## Parametric and non parametric Tests
 <p float="left">
   <img src="plots/tests0.png" width="45%" />
-  <img src="plots/tests.png" width="45%" />
+  <img src="plots/tests.jpg" width="45%" />
 </p>                        |
 
 ---
