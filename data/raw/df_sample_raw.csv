@@ -1,0 +1,101 @@
+age,job,marital,education,default,balance,housing,loan,day_of_week,month,duration,campaign,pdays,previous,poutcome,contact,y
+26,technician,single,secondary,no,-213,no,yes,21,jul,418,5,-1,0,,SMS callbacks,no
+36,management,married,primary,no,392,no,no,6,feb,148,2,-1,0,,Lead followup,no
+51,technician,divorced,secondary,yes,-113,no,yes,22,jul,314,4,-1,0,,Lead followup,no
+30,blue-collar,married,primary,no,2581,no,no,12,may,221,2,-1,0,,cellular,no
+31,services,single,tertiary,no,620,no,no,2,feb,189,1,-1,0,,cellular,no
+28,blue-collar,single,primary,no,643,yes,no,15,may,297,1,-1,0,,cellular,no
+41,management,married,tertiary,no,298,no,no,4,may,63,3,272,1,other,Lead followup,yes
+39,blue-collar,married,secondary,no,1044,yes,no,2,feb,158,1,-1,0,,Lead followup,no
+33,blue-collar,married,primary,no,415,yes,no,5,may,316,1,337,4,success,Cross selling,no
+32,technician,single,tertiary,no,723,no,no,28,aug,68,27,-1,0,,Festive offers,no
+35,blue-collar,divorced,primary,no,0,no,no,1,jul,55,1,-1,0,,Welcome calls,no
+55,retired,married,secondary,no,1279,yes,no,13,may,446,3,357,8,other,Voice blasts,no
+54,technician,married,secondary,no,65,no,no,24,feb,87,1,91,3,failure,Loan offers,yes
+30,management,single,tertiary,no,1636,no,no,6,jun,301,2,-1,0,,Cross selling,no
+38,blue-collar,single,secondary,no,-329,yes,no,12,may,86,4,-1,0,,telephone,yes
+47,management,married,tertiary,no,122,no,yes,18,jul,73,1,-1,0,,SMS callbacks,yes
+26,admin.,single,secondary,no,0,yes,no,18,jul,142,1,-1,0,,SMS callbacks,no
+32,self-employed,single,tertiary,no,4024,yes,no,2,jul,150,1,-1,0,,Lead followup,no
+43,technician,single,tertiary,no,317,yes,no,18,jul,106,1,-1,0,,telephone,no
+49,management,married,secondary,no,367,yes,no,29,may,85,6,-1,0,,Lead followup,no
+45,technician,married,secondary,no,1028,yes,no,9,jul,113,1,-1,0,,Welcome calls,no
+43,admin.,married,secondary,no,877,yes,no,2,feb,135,1,-1,0,,Festive offers,no
+27,admin.,divorced,secondary,no,2,no,yes,3,jul,472,1,-1,0,,cellular,no
+31,services,divorced,secondary,no,81,yes,no,16,apr,139,1,-1,0,,cellular,no
+31,management,single,tertiary,no,350,no,no,18,aug,471,2,-1,0,,cellular,no
+42,management,married,tertiary,no,831,yes,no,14,jul,455,3,-1,0,,Festive offers,no
+44,services,divorced,secondary,no,496,yes,yes,29,may,54,15,-1,0,,cellular,no
+29,management,single,tertiary,no,5894,yes,no,16,jun,223,2,-1,0,,telephone,no
+45,technician,divorced,secondary,no,88,yes,no,22,aug,55,3,-1,0,,Upgrades,no
+44,housemaid,married,primary,no,41,no,no,22,aug,299,1,-1,0,,Upgrades,no
+37,management,married,tertiary,no,5432,yes,yes,20,may,774,1,-1,0,,telephone,no
+26,technician,single,tertiary,no,1274,no,no,29,jan,475,2,-1,0,,Voice blasts,no
+36,housemaid,married,secondary,no,0,no,no,21,aug,76,2,-1,0,,Cross selling,no
+29,technician,single,,no,0,no,yes,22,jul,338,6,-1,0,,cellular,no
+32,housemaid,divorced,secondary,no,0,yes,no,11,jul,93,2,-1,0,,cellular,no
+40,management,married,tertiary,no,3352,yes,no,23,oct,138,1,-1,0,,telephone,no
+42,technician,single,tertiary,no,166,no,no,12,aug,226,4,-1,0,,SMS callbacks,no
+46,services,married,secondary,no,74,yes,no,15,may,101,4,-1,0,,SMS callbacks,no
+35,technician,single,tertiary,no,1104,yes,yes,2,jun,95,1,-1,0,,Loan offers,no
+52,self-employed,married,tertiary,no,6657,no,no,30,apr,917,1,-1,0,,cellular,no
+47,retired,married,primary,no,1374,no,yes,8,may,479,2,359,3,failure,Cross selling,no
+32,blue-collar,married,secondary,no,169,yes,no,14,may,291,2,-1,0,,cellular,no
+58,blue-collar,married,primary,no,1357,yes,no,13,may,150,2,-1,0,,telephone,no
+24,technician,married,secondary,no,556,yes,no,18,aug,460,2,-1,0,,Cross selling,no
+23,technician,single,tertiary,no,1502,no,no,12,aug,96,1,-1,0,,cellular,no
+48,self-employed,married,tertiary,no,3118,no,no,13,aug,371,2,-1,0,,cellular,no
+59,blue-collar,married,primary,no,3713,yes,yes,4,aug,170,2,-1,0,,Upgrades,no
+29,student,single,,no,2929,no,no,11,aug,91,1,-1,0,,cellular,no
+35,management,married,tertiary,no,1473,yes,yes,16,apr,176,3,-1,0,,Lead followup,no
+52,retired,married,secondary,no,1052,yes,no,29,may,35,1,-1,0,,cellular,no
+35,services,married,tertiary,no,6,yes,yes,16,apr,316,2,-1,0,,Loan offers,no
+24,student,single,secondary,no,1250,no,no,25,mar,411,2,-1,0,,Lead followup,no
+28,blue-collar,single,secondary,no,-337,no,yes,23,jul,284,1,-1,0,,telephone,no
+74,retired,married,tertiary,no,4912,no,no,20,apr,268,2,181,3,failure,cellular,no
+47,management,divorced,tertiary,no,-363,yes,yes,27,may,513,1,-1,0,,Cross selling,no
+35,technician,single,secondary,no,103,yes,no,26,may,290,2,-1,0,,Loan offers,no
+31,entrepreneur,single,secondary,no,0,yes,no,21,nov,544,2,-1,0,,Lead followup,no
+54,technician,married,secondary,no,2102,yes,no,5,apr,547,1,626,2,failure,Cross selling,no
+40,self-employed,married,primary,no,42,no,no,11,jul,264,3,-1,0,,Lead followup,no
+59,unemployed,married,secondary,no,1047,no,no,21,aug,438,1,184,3,success,telephone,no
+58,services,married,secondary,no,10,yes,yes,30,jul,95,5,-1,0,,Welcome calls,no
+30,management,single,tertiary,no,365,yes,no,13,may,76,3,-1,0,,Cross selling,no
+35,technician,divorced,secondary,yes,362,no,no,29,jan,329,2,240,8,other,cellular,yes
+38,services,married,secondary,no,369,yes,no,7,may,224,1,-1,0,,Lead followup,no
+39,technician,single,secondary,no,0,no,no,25,aug,194,9,-1,0,,Lead followup,no
+35,technician,married,secondary,no,84,yes,no,21,aug,415,3,-1,0,,SMS callbacks,no
+58,technician,married,tertiary,no,4656,no,no,31,jul,119,6,-1,0,,Welcome calls,no
+36,management,married,tertiary,no,125,yes,no,13,may,355,1,-1,0,,cellular,no
+48,management,married,tertiary,no,6613,no,no,17,jun,159,3,-1,0,,Upgrades,no
+32,technician,married,tertiary,no,432,yes,no,19,nov,164,2,195,1,other,telephone,no
+47,technician,divorced,secondary,no,1573,yes,no,26,may,130,1,-1,0,,Voice blasts,no
+46,technician,married,secondary,no,1353,no,no,18,aug,528,5,-1,0,,Loan offers,no
+60,management,married,tertiary,no,261,yes,yes,1,jun,128,1,192,1,failure,Upgrades,no
+54,blue-collar,married,primary,no,2584,no,no,20,aug,387,7,-1,0,,SMS callbacks,no
+57,retired,married,secondary,no,975,no,no,16,jul,166,1,-1,0,,Upgrades,no
+34,blue-collar,single,primary,no,0,yes,no,8,may,323,1,-1,0,,Lead followup,no
+44,self-employed,divorced,secondary,no,8,no,no,26,jul,423,4,-1,0,,cellular,no
+26,admin.,single,secondary,no,102,no,yes,8,jul,658,2,-1,0,,Loan offers,no
+41,entrepreneur,married,secondary,no,30,no,no,30,apr,460,1,-1,0,,Welcome calls,no
+43,admin.,married,secondary,no,59,yes,no,15,jul,60,3,-1,0,,Upgrades,yes
+27,technician,single,,no,59,no,no,15,jul,792,4,-1,0,,cellular,no
+52,blue-collar,married,primary,no,28,yes,no,21,nov,85,3,-1,0,,Welcome calls,no
+47,technician,married,,no,-598,yes,no,28,may,239,4,-1,0,,Upgrades,no
+45,blue-collar,married,primary,no,1794,yes,no,14,may,174,2,-1,0,,Festive offers,yes
+53,unemployed,married,secondary,no,2180,no,no,30,jan,89,3,-1,0,,telephone,no
+40,blue-collar,married,primary,no,-214,yes,no,16,apr,348,2,266,1,other,cellular,no
+54,management,married,secondary,no,1394,yes,no,15,may,438,5,-1,0,,Upgrades,no
+31,management,single,tertiary,no,86,no,no,29,jan,100,1,170,4,failure,Lead followup,no
+36,blue-collar,married,secondary,no,-318,yes,no,14,jul,135,2,-1,0,,telephone,no
+36,blue-collar,married,secondary,no,-206,yes,no,8,may,177,2,-1,0,,Cross selling,no
+39,blue-collar,married,secondary,no,0,no,no,16,jun,289,1,-1,0,,SMS callbacks,no
+31,admin.,married,secondary,no,84,yes,no,22,jul,580,3,-1,0,,Loan offers,no
+43,services,married,secondary,no,6346,yes,no,11,may,57,1,-1,0,,SMS callbacks,no
+56,self-employed,married,secondary,no,800,no,yes,9,jul,170,1,-1,0,,telephone,no
+31,blue-collar,married,secondary,no,-596,yes,no,21,jul,147,1,-1,0,,Welcome calls,no
+37,management,married,tertiary,no,585,yes,no,21,apr,47,2,-1,0,,Lead followup,no
+39,blue-collar,married,primary,no,0,yes,no,6,may,262,2,-1,0,,Voice blasts,no
+43,technician,married,tertiary,no,1796,no,no,28,jan,352,2,-1,0,,Upgrades,yes
+48,unemployed,divorced,secondary,no,201,no,no,10,feb,406,2,92,2,success,Upgrades,no
+36,technician,single,secondary,no,1615,yes,no,11,may,622,1,-1,0,,Lead followup,no

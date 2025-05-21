@@ -1,0 +1,11 @@
+# data
+pandas==2.2.3
+numpy==1.25.2
+
+# stats
+scipy==1.15.3
+statsmodels==0.14.4
+
+# viz
+matplotlib==3.8.1
+seaborn==0.13.2

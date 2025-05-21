@@ -1,0 +1,101 @@
+group,marketing_strategy,outcome
+control,Cross selling,1
+control,SMS callbacks,0
+control,telephone,0
+control,Lead followup,0
+control,cellular,0
+treatment,Upgrades,1
+control,Lead followup,0
+control,Cross selling,0
+control,cellular,0
+control,Welcome calls,1
+control,Welcome calls,0
+control,Cross selling,0
+control,cellular,0
+control,cellular,0
+control,telephone,0
+treatment,Loan offers,0
+control,SMS callbacks,0
+control,Cross selling,0
+control,Cross selling,1
+control,Cross selling,0
+control,telephone,0
+control,SMS callbacks,0
+control,Cross selling,0
+treatment,Voice blasts,0
+control,Upgrades,0
+control,Loan offers,0
+control,Cross selling,1
+control,Welcome calls,0
+control,SMS callbacks,0
+control,Loan offers,0
+control,cellular,0
+control,cellular,0
+control,SMS callbacks,0
+control,Cross selling,0
+treatment,Upgrades,0
+control,Cross selling,0
+control,cellular,0
+control,Cross selling,0
+control,Cross selling,1
+control,Loan offers,0
+control,Upgrades,1
+control,Upgrades,0
+treatment,Festive offers,0
+control,Lead followup,0
+control,cellular,0
+control,Lead followup,1
+control,Loan offers,0
+control,Festive offers,0
+treatment,Lead followup,0
+control,cellular,0
+treatment,Upgrades,0
+control,Loan offers,0
+control,Cross selling,1
+control,telephone,0
+control,telephone,0
+control,Lead followup,0
+control,Cross selling,0
+control,Lead followup,0
+control,SMS callbacks,0
+control,Cross selling,0
+control,telephone,0
+control,Upgrades,0
+control,cellular,0
+treatment,cellular,1
+treatment,Lead followup,0
+control,cellular,1
+control,Festive offers,0
+control,telephone,0
+control,Welcome calls,0
+control,Cross selling,0
+control,Loan offers,0
+control,cellular,0
+control,cellular,1
+control,cellular,0
+control,SMS callbacks,0
+control,cellular,0
+control,SMS callbacks,0
+control,cellular,0
+control,Lead followup,0
+control,Upgrades,0
+treatment,cellular,0
+treatment,Voice blasts,1
+control,Voice blasts,0
+control,Loan offers,0
+control,telephone,0
+control,Loan offers,0
+treatment,telephone,0
+control,Welcome calls,0
+control,Lead followup,0
+treatment,Upgrades,0
+control,telephone,0
+control,cellular,0
+control,cellular,0
+control,Loan offers,0
+control,Welcome calls,0
+control,Lead followup,0
+control,SMS callbacks,0
+control,cellular,0
+control,Loan offers,1
+control,Festive offers,0
