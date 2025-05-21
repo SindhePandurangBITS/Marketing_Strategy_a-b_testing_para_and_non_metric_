@@ -27,6 +27,11 @@ This project evaluates strategy effectiveness using:
 * **Non-Parametric**: Kruskal–Wallis, Mann–Whitney U, Fisher’s Exact
   Diagnostic checks ensure correct test selection based on data assumptions.
 
+  <p float="left">
+  <img src="plots/tests.jpg" width="45%" />
+  <img src="plots/tests1.png" width="45%" />
+</p>
+
 ---
 
 ## ❓ Why Use Both Parametric & Non-Parametric Tests?
