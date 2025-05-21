@@ -1,185 +1,140 @@
-# Marketing strategy optimization a/b testing (parametric and non-parametric)
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
-[![Stars](https://img.shields.io/github/stars/your_username/clustering_project.svg)](https://github.com/your_username/clustering_project/stargazers)
+
+---
+
+# 📊 Marketing Strategy Optimization – A/B Testing (Parametric & Non-Parametric)
+
+
+[![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/your_username/ab-testing-project.svg)](https://github.com/your_username/ab-testing-project/stargazers)
+[![Dataset: UCI Bank Marketing](https://img.shields.io/badge/Dataset-UCI%20Bank%20Marketing-orange.svg)](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
+
 
 ---
 
 ## 🎯 Business Challenge
 
-The business problem addressed is identifying which marketing contact strategies most effectively drive customer subscriptions. By simulating a real-world A/B test, the analysis compares contacted (treatment) vs. non-contacted (control) users to measure conversion impact. The goal is to determine if outreach works, which methods perform best, and where to focus future marketing efforts.
-
-
-
-## What tests included (paarametric and non parametric)?
-
-This project compares marketing strategies using A/B testing. It applies ANOVA, Welch’s t-test, Tukey’s HSD, Chi-square, Z-tests, Bayesian tests, Kruskal–Wallis, Fisher’s Exact Test  and Mann–Whitney U. Visual and diagnostic checks ensure robustness. Insights guide which strategies to scale or drop based on conversion impact.
-
-## Why both parametric and non paara mterictests inlcudded tests?
-Both parametric and non-parametric tests are included to ensure reliable results under varying data conditions. When assumptions like normality or equal variance don’t hold, non-parametric tests provide robust alternatives, ensuring insights remain valid and actionable.
-
-
-## tests vs makrteing strategy problem
-| Assumption Type               | Comparison Type                         | Comparison Goal                          | Statistical Test(s)                               |
-|------------------------------|-----------------------------------------|------------------------------------------|---------------------------------------------------|
-| Parametric (Valid)           | Treatment vs Control                    | Overall Impact                           | Chi-square Test                                   |
-| Parametric (Valid)           | Control vs Treatment                    | Significant Difference                   | Bayesian Test                                     |
-| Parametric (Valid)           | Strategy vs Strategy                    | Best Strategy                            | Z-test (Pairwise Proportions)                     |
-| Non-Parametric               | Treatment vs Control                    | Overall Impact                           | Fisher’s Exact Test                               |
-| Non-Parametric               | Control vs Treatment                    | Significant Difference                   | Kruskal–Wallis Test                               |
-| Non-Parametric               | Strategy vs Strategy                    | Best Strategy                            | Mann–Whitney U Test                               |
-| Parametric (Partially Valid) | Treatment vs Control                    | Binary Outcome Comparison                | Chi-square Test                                   |
-| Parametric (Partially Valid) | Control vs Treatment                    | Group Differences                        | One-Way ANOVA, Welch’s t-test (Pairwise)          |
-| Parametric (Partially Valid) | Strategy vs Strategy                    | Post-hoc Comparison                      | Tukey’s HSD Test  
-
----
-## Parametric and non parametric Tests
-<p float="left">
-  <img src="plots/tests1.png" width="45%" />
-  <img src="plots/tests.jpg" width="45%" />
-</p>                        |
+Identify which marketing contact strategies drive the most customer conversions. This project simulates a real-world A/B test by comparing contacted (treatment) vs. non-contacted (control) users to measure and rank strategy performance.
 
 ---
 
-## a/b test findings
+## ✅ Tests Covered (Parametric & Non-Parametric)
 
-| **Test**                | **H₀**                                           | **H₁**                                           | **Key Findings**                                                                                           |
-|-------------------------|--------------------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| **Chi-Square Test**     | Success rates are equal (T vs C)                | Success rates differ (T vs C)                   | 9 of 10 strategies show lift (p < 0.001); “Welcome Calls” leads, “Cellular” performs worst                  |
-| **Bayesian A/B Test**   | All strategies have equal true rates            | At least one strategy has a different true rate | Welcome Calls P(best) ≈ 0.744; Festive Offers ≈ 0.253; others ≈ 0                                          |
-| **Pairwise Z-Test**     | Proportions are equal (pᵢ = pⱼ)                 | Proportions differ (pᵢ ≠ pⱼ)                    | Most p < 0.001; Welcome Calls leads; Cellular and Telephone underperform                                   |
-| **Fisher’s Exact Test** | T and C have equal success rates                | Success rates differ between T and C            | p = 0.0000; odds ratio = 2.42 → Treatment converts significantly better                                     |
-| **Kruskal–Wallis Test** | All strategies have same distribution           | At least one differs                            | p = 0.0000; significant distribution difference detected                                                    |
-| **Mann–Whitney U Test** | Strategy i = Strategy j in distribution         | One strategy > the other                        | Welcome Calls wins 8/10 tests; Festive Offers, Voice Blasts strong; Cellular weak                          |
-| **One-Way ANOVA**       | All means are equal across strategies           | At least one mean differs                       | Welcome Calls (74.4%) and Festive Offers (25.3%) dominate probability of best                              |
-| **Pairwise t-Tests**    | Meanᵢ = Meanⱼ                                   | Meanᵢ ≠ Meanⱼ                                   | Most p ≪ 0.001; strong pairwise differences; top strategies consistently outperform others                  |
-| **Tukey’s HSD**         | All strategy means equal                        | At least one pair differs                       | Welcome Calls > all others; Festive Offers next best (p-adj ≈ 0.51)                                         |
+This project evaluates strategy effectiveness using:
 
-## Final results
-| **Insight**                  | **Summary**                                                                                                                       |
-|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **Treatment Effect Proven** | 100% of relevant tests (Chi-square, Fisher’s, Z-test, logistic models) show treatment outperforms control — marketing is effective. |
-| **Strategies Differ**       | All strategy comparison tests (ANOVA, Kruskal–Wallis, Tukey HSD, Mann–Whitney U, Z-test) reveal significant differences.            |
-| **Welcome Calls Dominate**  | In all model rankings and pairwise tests, Welcome Calls is the top-performing strategy with highest success rate and consistency.   |
-
-Here’s your **A/B Testing Project Pipeline** rewritten in a compact, phase-wise format, similar in tone and style to the neural network version:
+* **Parametric**: ANOVA, Welch’s t-test, Tukey’s HSD, Chi-square, Z-test, Bayesian A/B Test
+* **Non-Parametric**: Kruskal–Wallis, Mann–Whitney U, Fisher’s Exact
+  Diagnostic checks ensure correct test selection based on data assumptions.
 
 ---
 
-##  A/B Testing Project Pipeline
+## ❓ Why Use Both Parametric & Non-Parametric Tests?
 
-1. **Business Understanding**
-   Define marketing goals: measure strategy impact on subscriptions, identify top performing outreach methods.
+Using both ensures valid conclusions regardless of data shape. When assumptions like normality or variance equality break, non-parametric methods still yield robust results.
 
-2. **Data Wrangling**
-   Load and clean campaign logs, define treatment/control groups using `poutcome`, resolve nulls, encode labels.
+---
 
-3. **Preprocessing**
-   Binary encode outcomes, format dates, validate group assignments, drop irrelevant or leak prone columns.
+## 🧪 Test Mapping to Business Questions
 
-4. **Exploratory Data Analysis**
-   Plot conversion rates, strategy distributions, group sizes, inspect for imbalance or noise.
+| **Assumption Type**          | **Comparison Type**  | **Goal**                    | **Test(s)**                       |
+| ---------------------------- | -------------------- | --------------------------- | --------------------------------- |
+| Parametric (Valid)           | Treatment vs Control | Overall Effectiveness       | Chi-square, Z-test, Bayesian Test |
+| Non-Parametric               | Treatment vs Control | Assumption-Free Comparison  | Fisher’s Exact, Kruskal–Wallis    |
+| Parametric (Partially Valid) | Strategy Comparisons | Top Strategy Identification | ANOVA, Welch’s t-test, Tukey HSD  |
+| Non-Parametric               | Strategy Comparisons | Top Strategy (Non-normal)   | Mann–Whitney U                    |
 
-5. **Diagnostic Tests**
-   Assess normality, variance homogeneity, independence, identify assumption violations before selecting test type.
+---
 
-6. **A/B Tests – Parametric (Valid)**
-   Run Chi-square, Z-tests, Bayesian A/B tests where assumptions (normality, equal variance) are met.
+## 📊 Test Summary
 
-7. **A/B Tests – Non-Parametric (No Assumptions)**
-   Apply Fisher’s Exact, Kruskal–Wallis, Mann–Whitney U when assumptions are violated or data is categorical.
+| **Test**          | **H₀**                      | **H₁**                    | **Key Findings**                                                           |
+| ----------------- | --------------------------- | ------------------------- | -------------------------------------------------------------------------- |
+| Chi-Square        | T = C success rates         | T ≠ C success rates       | 9/10 strategies show lift; Welcome Calls leads; Cellular underperforms     |
+| Bayesian A/B      | All strategies equal        | At least one different    | Welcome Calls P(best) ≈ 0.744; Festive ≈ 0.253                             |
+| Z-Test (Pairwise) | Proportions equal           | Proportions differ        | Most p < 0.001; Welcome Calls best; Cellular & Telephone lowest performers |
+| Fisher’s Exact    | T = C success rates         | T ≠ C                     | p = 0.0000; Treatment converts 2.4× better                                 |
+| Kruskal–Wallis    | All strategies same         | At least one different    | Significant strategy differences (p = 0.0000)                              |
+| Mann–Whitney U    | Strategy i = j distribution | One outperforms the other | Welcome Calls wins 8/10; Festive & Voice strong; Cellular worst            |
+| ANOVA             | All means equal             | At least one mean differs | Welcome (74.4%) and Festive (25.3%) dominate                               |
+| Welch’s t-test    | Meanᵢ = Meanⱼ               | Meanᵢ ≠ Meanⱼ             | Most p ≪ 0.001; strong pairwise contrasts                                  |
+| Tukey’s HSD       | μᵢ = μⱼ                     | μᵢ ≠ μⱼ                   | Welcome better than all; Festive similar to Welcome (p-adj ≈ 0.51)         |
 
-8. **A/B Tests – Parametric (Partially Valid)**
-   Use One-Way ANOVA, Welch’s t-tests, Tukey HSD relying on large-N robustness (CLT) under partial assumption validity.
+---
 
-9. **Findings & Summary**
-   Treatment effect confirmed, strategies differ significantly, Welcome Calls consistently top performer across all tests.
+## 🏁 Final Results
 
-10. **Future Scope**
-    Extend to time-based A/B tests, add cost-per-conversion analysis, integrate uplift modeling for causal targeting.
+| **Insight**         | **Summary**                                                                 |
+| ------------------- | --------------------------------------------------------------------------- |
+| Treatment Effective | All tests show treatment group outperforms control—marketing contact works. |
+| Strategies Differ   | Strong evidence that strategies are not equally effective.                  |
+| Welcome Calls Win   | Consistently top-performing strategy across all test types.                 |
 
+---
+
+## 🧬 Project Pipeline
+
+1. **Business Understanding** – Define goals, target conversions, top outreach strategy.
+2. **Data Wrangling** – Load, clean, and assign treatment/control using `poutcome`.
+3. **Preprocessing** – Encode outcomes, fix dates, drop leakage.
+4. **EDA** – Plot group-wise conversions and strategy balance.
+5. **Diagnostics** – Validate assumptions (normality, variance).
+6. **Parametric Tests (Valid)** – Chi-square, Z-test, Bayesian (assumptions met).
+7. **Non-Parametric Tests** – Fisher, Kruskal–Wallis, Mann–Whitney (no assumptions).
+8. **Parametric Tests (Partial Validity)** – ANOVA, Welch, Tukey (via CLT).
+9. **Findings** – Welcome Calls dominate; strategies vary.
+10. **Future Scope** – Add cost-per-conversion, time-based A/B, uplift models.
 
 ---
 
 ## 🔧 Installation & Quick Start
 
-**1. Clone the repo**
-
 ```bash
+# Clone repo
 git clone https://github.com/SindhePandurangBITS/ab-testing-project.git
 cd ab-testing-project
-```
 
-**2. Create & activate virtual environment**
-
-```bash
+# Setup environment
 python3 -m venv venv
 source venv/bin/activate
-```
 
-**3. Install dependencies**
-
-```bash
+# Install requirements
 pip install -r requirements.txt
+
+# Run pipeline
+python src/data_loader.py --input data_raw/ab_data.csv --output data_processed/clean.csv
+python src/preprocessing.py --input data_processed/clean.csv --output data_processed/preprocessed.csv
+python src/EDA.py --input data_processed/preprocessed.csv
+python src/diagnostics.py --input data_processed/preprocessed.csv
+python src/tests_parametric_valid.py --input data_processed/preprocessed.csv
+python src/tests_parametric_partially_valid.py --input data_processed/preprocessed.csv
+python src/tests_nonparametric.py --input data_processed/preprocessed.csv
 ```
 
-**4. Run full pipeline**
-
-```bash
-#Load and structure data
-python src/data_loader.py \
-  --input data_raw/ab_data.csv \
-  --output data_processed/clean.csv
-
-#Preprocessing
-python src/preprocessing.py \
-  --input data_processed/clean.csv \
-  --output data_processed/preprocessed.csv
-
-#Perform EDA
-python src/EDA.py \
-  --input data_processed/preprocessed.csv
-
-#Run diagnostics
-python src/diagnostics.py \
-  --input data_processed/preprocessed.csv
-
-#Run parametric tests (assumptions valid)
-python src/tests_parametric(valid).py \
-  --input data_processed/preprocessed.csv
-
-#Run parametric tests (assumptions partially valid)
-python src/tests_parametric(partially_valid).py \
-  --input data_processed/preprocessed.csv
-
-#Run non-parametric tests
-python src/tests_nonparametric.py \
-  --input data_processed/preprocessed.csv
-```
 ---
 
-## 📖 Documentation & Notebooks
-Detailed analyses live in notebooks:
-- **notebooks\AB_testing(para_and_non_parametric)**
-* **Goal to Insight:** Defined marketing impact goals, identified treatment/control groups; confirmed strategy effectiveness through statistical testing.
-* **Full Pipeline:** Cleaned data, encoded outcomes, ran diagnostics, applied parametric and non-parametric A/B tests based on assumption validity.
-* **Key Outcomes:** Found strong treatment effect, Welcome Calls emerged as top strategy, future work includes time-based testing and uplift modeling.
+## 📖 Documentation
 
----
-⭐ Support
-If this project helped you, please ⭐ star the repository and share!
+All detailed code and findings are in:
+`notebooks/AB_testing(para_and_non_parametric).ipynb`
 
 ---
 
-##  Key References
+## 🗂 Key References
 
-1. **Kohavi, R., Longbotham, R., Sommerfield, D., & Henne, R. (2009)**  
-   *Controlled Experiments on the Web: Survey and Practical Guide*  
-   _Data Mining and Knowledge Discovery, 18(1), 140–181_  
-   [https://doi.org/10.1007/s10618-008-0114-1](https://doi.org/10.1007/s10618-008-0114-1)  
-  
+1. **Kohavi, R. et al. (2009)**
+   *Controlled Experiments on the Web: Survey and Practical Guide*
+   [DOI:10.1007/s10618-008-0114-1](https://doi.org/10.1007/s10618-008-0114-1)
 
-2. **NASSCOM & Zinnov (2020)**  
-   *Marketing Analytics in India – Unlocking the Power of Data*  
-   [https://nasscom.in/knowledge-center/publications/marketing-analytics-india-unlocking-power-data](https://nasscom.in/knowledge-center/publications/marketing-analytics-india-unlocking-power-data)  
+2. **NASSCOM & Zinnov (2020)**
+   *Marketing Analytics in India – Unlocking the Power of Data*
+   [nasscom.in/publications/marketing-analytics](https://nasscom.in/knowledge-center/publications/marketing-analytics-india-unlocking-power-data)
+
+---
+
+## ⭐ Support
+
+If this project helped you, please consider giving it a ⭐ and sharing it with your network!
+
+---
+
