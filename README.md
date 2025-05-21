@@ -91,7 +91,7 @@ Using both ensures valid conclusions regardless of data shape. When assumptions 
 
 ```bash
 # Clone repo
-git clone https://github.com/SindhePandurangBITS/ab-testing-project.git
+git clone https://github.com/SindhePandurangBITS/Marketing_Strategy_a-b_testing_para_and_non_metric_.git
 cd ab-testing-project
 
 # Setup environment
